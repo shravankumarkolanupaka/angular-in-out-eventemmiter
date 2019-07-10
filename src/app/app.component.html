@@ -1,6 +1,8 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
 
 <app-sample name="world"></app-sample>
+
+
+Parent Num: {{ num }}<br>
+  Parent Count: {{ parentCount }}
+  <app-evntemitter [count]="num" (result)="ngOnChange($event)"></app-evntemitter>
